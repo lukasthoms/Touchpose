@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#if defined(TOUCHPOSE) && TOUCHPOSE
 
 #import <UIKit/UIKit.h>
 
@@ -23,3 +24,5 @@
 @property (nonatomic, assign) BOOL showTouchesWhenKeyboardShown;
 
 @end
+
+#endif

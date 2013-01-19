@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#if defined(TOUCHPOSE) && TOUCHPOSE
 
 #import "QTouchposeApplication.h"
 #import <QuartzCore/QuartzCore.h>
 
 #import <objc/runtime.h> 
-
 
 @interface QTouchposeApplication ()
 
@@ -328,3 +328,5 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
 }
 
 @end
+
+#endif
