@@ -53,7 +53,7 @@
 
 #pragma mark - UIView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect __unused)frame
 {
     return [self initWithPoint:(CGPoint){ 0.0f, 0.0f } hue:0.0f];
 }
@@ -194,7 +194,7 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
         {
             UIView *view = (__bridge UIView *)values[i];
             CFDictionaryRemoveValue(_touchDictionary, (__bridge const void *)(touch));
-            [UIView animateWithDuration:0.5f animations:^{ view.alpha = 0.0f; } completion:^(BOOL completed){ [view removeFromSuperview]; }];
+            [UIView animateWithDuration:0.5f animations:^{ view.alpha = 0.0f; } completion:^(BOOL __unused completed){ [view removeFromSuperview]; }];
         }
     }
 }
@@ -219,7 +219,7 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
             {
                 // Remove the touch from the 
                 CFDictionaryRemoveValue(_touchDictionary, (__bridge const void *)(touch));
-                [UIView animateWithDuration:0.5f animations:^{ fingerView.alpha = 0.0f; } completion:^(BOOL completed){ [fingerView removeFromSuperview]; }];
+                [UIView animateWithDuration:0.5f animations:^{ fingerView.alpha = 0.0f; } completion:^(BOOL __unused completed){ [fingerView removeFromSuperview]; }];
             }
         }
         else
@@ -240,7 +240,7 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
     [self removeTouchesActiveTouches:touches];
 }
 
-- (void)applicationDidFinishLaunching:(NSNotification *)notification
+- (void)applicationDidFinishLaunching:(NSNotification __unused *)notification
 {
     // We intercept calls to -becomeKeyWindow and -didAddSubview of UIWindow to manage the
     // overlay view QTouchposeTouchesView and ensure it remains the top-most window.
@@ -250,22 +250,22 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
     self.showTouches = _alwaysShowTouches || [self hasMirroredScreen];
 }
 
-- (void)screenDidConnectNotification:(NSNotification *)notification
+- (void)screenDidConnectNotification:(NSNotification __unused *)notification
 {
     self.showTouches = _alwaysShowTouches || [self hasMirroredScreen];
 }
 
-- (void)screenDidDisonnectNotification:(NSNotification *)notification
+- (void)screenDidDisonnectNotification:(NSNotification __unused *)notification
 {
     self.showTouches = _alwaysShowTouches || [self hasMirroredScreen];
 }
 
-- (void)keyboardDidShowNotification:(NSNotification *)notification
+- (void)keyboardDidShowNotification:(NSNotification __unused *)notification
 {
     self.showTouches = _showTouchesWhenKeyboardShown && (_alwaysShowTouches || [self hasMirroredScreen]);
 }
 
-- (void)keyboardDidHideNotification:(NSNotification *)notification
+- (void)keyboardDidHideNotification:(NSNotification __unused *)notification
 {
     self.showTouches = _alwaysShowTouches || [self hasMirroredScreen];
 }
