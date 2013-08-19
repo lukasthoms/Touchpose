@@ -45,7 +45,7 @@
 /// The QTouchposeFingerView is used to render a finger touches on the screen.
 @interface QTouchposeFingerView : UIView
 
-- (id)initWithPoint:(CGPoint)point hue:(CGFloat)hue;
+- (id)initWithPoint:(CGPoint)point;
 
 @end
 
@@ -55,22 +55,22 @@
 
 - (id)initWithFrame:(CGRect __unused)frame
 {
-    return [self initWithPoint:(CGPoint){ 0.0f, 0.0f } hue:0.0f];
+    return [self initWithPoint:(CGPoint){ 0.0f, 0.0f }];
 }
 
 #pragma mark - QTouchposeFingerView
 
-- (id)initWithPoint:(CGPoint)point hue:(CGFloat)hue
+- (id)initWithPoint:(CGPoint)point
 {
-    const CGFloat kFingerRadius = 22.0f;
+    const CGFloat kFingerRadius = 21.0f;
     
     if ((self = [super initWithFrame:CGRectMake(point.x-kFingerRadius, point.y-kFingerRadius, 2*kFingerRadius, 2*kFingerRadius)]))
     {
         self.opaque = NO;
-        self.layer.borderColor = [UIColor colorWithHue:hue saturation:0.5f brightness:0.5f alpha:0.6f].CGColor;
+        self.layer.borderColor = [UIColor colorWithWhite:170.f / 255.f alpha:1.f].CGColor;
         self.layer.cornerRadius = kFingerRadius;
-        self.layer.borderWidth = 2.0f;
-        self.layer.backgroundColor = [UIColor colorWithHue:hue saturation:0.5f brightness:0.5f alpha:0.4f].CGColor;
+        self.layer.borderWidth = 1.f / [UIScreen mainScreen].scale;
+        self.layer.backgroundColor = [UIColor colorWithWhite:200.f / 255.f alpha:0.75f].CGColor;
     }
     return self;
 }
@@ -122,7 +122,6 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
     // sequence, and the UIViews are retained by their superview.)
     CFMutableDictionaryRef _touchDictionary;
     UIView *_touchView;
-    CGFloat _touchHue;
     BOOL _showTouches;
     BOOL _alwaysShowTouches;
     BOOL _showTouchesWhenKeyboardShown;
@@ -146,7 +145,6 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShowNotification:) name:UIKeyboardDidShowNotification object:nil];        
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHideNotification:) name:UIKeyboardDidHideNotification object:nil];        
         _touchDictionary = CFDictionaryCreateMutable(NULL, 10, NULL, NULL);
-        _touchHue = 0.55f;
         _alwaysShowTouches = NO;
         
         // In my experience, the keyboard performance is crippled when showing touches on a
@@ -169,13 +167,16 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
 - (void)sendEvent:(UIEvent *)event
 {
     [super sendEvent:event];
-    if (_showTouches)
+    if (_showTouches) {
+        if (_showOnlySingleFingerTouches && [event allTouches].count != 1) {
+            return;
+        }
         [self updateTouches:[event allTouches]];
+    }
 }
 
 #pragma mark - QApplication
 
-@synthesize touchHue = _touchHue;
 @synthesize showTouches = _showTouches;
 @synthesize alwaysShowTouches = _alwaysShowTouches;
 @synthesize showTouchesWhenKeyboardShown = _showTouchesWhenKeyboardShown;
@@ -194,7 +195,7 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
         {
             UIView *view = (__bridge UIView *)values[i];
             CFDictionaryRemoveValue(_touchDictionary, (__bridge const void *)(touch));
-            [UIView animateWithDuration:0.5f animations:^{ view.alpha = 0.0f; } completion:^(BOOL __unused completed){ [view removeFromSuperview]; }];
+            [UIView animateWithDuration:0 animations:^{ view.alpha = 0.0f; } completion:^(BOOL __unused completed){ [view removeFromSuperview]; }];
         }
     }
 }
@@ -219,14 +220,14 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
             {
                 // Remove the touch from the 
                 CFDictionaryRemoveValue(_touchDictionary, (__bridge const void *)(touch));
-                [UIView animateWithDuration:0.5f animations:^{ fingerView.alpha = 0.0f; } completion:^(BOOL __unused completed){ [fingerView removeFromSuperview]; }];
+                [UIView animateWithDuration:0 animations:^{ fingerView.alpha = 0.0f; } completion:^(BOOL __unused completed){ [fingerView removeFromSuperview]; }];
             }
         }
         else
         {
             if (fingerView == NULL)
             {
-                fingerView = [[QTouchposeFingerView alloc] initWithPoint:point hue:_touchHue];
+                fingerView = [[QTouchposeFingerView alloc] initWithPoint:point];
                 [_touchView addSubview:fingerView];
                 CFDictionarySetValue(_touchDictionary, (__bridge const void *)(touch), (__bridge const void *)(fingerView));
             }

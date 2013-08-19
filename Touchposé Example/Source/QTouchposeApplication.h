@@ -18,10 +18,10 @@
 
 @interface QTouchposeApplication : UIApplication
 
-@property (nonatomic, assign) CGFloat touchHue;
 @property (nonatomic, assign) BOOL showTouches;
 @property (nonatomic, assign) BOOL alwaysShowTouches;
 @property (nonatomic, assign) BOOL showTouchesWhenKeyboardShown;
+@property (nonatomic, assign) BOOL showOnlySingleFingerTouches;
 
 @end
 
