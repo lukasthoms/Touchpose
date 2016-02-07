@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2522A96C1C67565F007373E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2522A9691C67565F007373E1 /* main.m */; };
+		2522A9741C675664007373E1 /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2522A96F1C675664007373E1 /* QAppDelegate.m */; };
+		2522A9751C675664007373E1 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2522A9711C675664007373E1 /* QTouchposeApplication.m */; };
+		2522A9761C675664007373E1 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2522A9731C675664007373E1 /* QViewController.m */; };
+		2543232B1C6756BA005E9658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 254323291C6756BA005E9658 /* InfoPlist.strings */; };
 		5F022762163F72CE00CF35BD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F022761163F72CE00CF35BD /* Default-568h@2x.png */; };
 		5FFDBED914EEEAAB002CBB71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFDBED814EEEAAB002CBB71 /* UIKit.framework */; };
 		5FFDBEDB14EEEAAB002CBB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFDBEDA14EEEAAB002CBB71 /* Foundation.framework */; };
 		5FFDBEDD14EEEAAB002CBB71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFDBEDC14EEEAAB002CBB71 /* CoreGraphics.framework */; };
-		5FFDBEE314EEEAAB002CBB71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBEE114EEEAAB002CBB71 /* InfoPlist.strings */; };
-		5FFDBEE514EEEAAB002CBB71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBEE414EEEAAB002CBB71 /* main.m */; };
-		5FFDBEE914EEEAAB002CBB71 /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBEE814EEEAAB002CBB71 /* QAppDelegate.m */; };
-		5FFDBEEC14EEEAAB002CBB71 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBEEB14EEEAAB002CBB71 /* QViewController.m */; };
-		5FFDBEFF14EEF737002CBB71 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBEFE14EEF737002CBB71 /* QTouchposeApplication.m */; };
 		5FFDBF0714EF2A53002CBB71 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBF0614EF2A53002CBB71 /* Icon.png */; };
 		5FFDBF0914EF2A98002CBB71 /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBF0814EF2A98002CBB71 /* Icon-iPad.png */; };
 		5FFDBF0B14EF2ED9002CBB71 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDBF0A14EF2ED9002CBB71 /* Icon@2x.png */; };
@@ -24,21 +24,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2522A9691C67565F007373E1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Touchpose/main.m; sourceTree = SOURCE_ROOT; };
+		2522A96A1C67565F007373E1 /* Touchpose-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Touchpose-Info.plist"; path = "Touchpose/Touchpose-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2522A96B1C67565F007373E1 /* Touchpose-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Touchpose-Prefix.pch"; path = "Touchpose/Touchpose-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		2522A96E1C675664007373E1 /* QAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QAppDelegate.h; path = Touchpose/QAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		2522A96F1C675664007373E1 /* QAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QAppDelegate.m; path = Touchpose/QAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		2522A9701C675664007373E1 /* QTouchposeApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QTouchposeApplication.h; path = Touchpose/QTouchposeApplication.h; sourceTree = SOURCE_ROOT; };
+		2522A9711C675664007373E1 /* QTouchposeApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QTouchposeApplication.m; path = Touchpose/QTouchposeApplication.m; sourceTree = SOURCE_ROOT; };
+		2522A9721C675664007373E1 /* QViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QViewController.h; path = Touchpose/QViewController.h; sourceTree = SOURCE_ROOT; };
+		2522A9731C675664007373E1 /* QViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QViewController.m; path = Touchpose/QViewController.m; sourceTree = SOURCE_ROOT; };
+		2543232A1C6756BA005E9658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Touchpose/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5F022761163F72CE00CF35BD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5FFDBED414EEEAAB002CBB71 /* Touchposé.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touchposé.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFDBED414EEEAAB002CBB71 /* Touchposé.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touchposé.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFDBED814EEEAAB002CBB71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FFDBEDA14EEEAAB002CBB71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5FFDBEDC14EEEAAB002CBB71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5FFDBEE014EEEAAB002CBB71 /* Touchpose-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Touchpose-Info.plist"; sourceTree = "<group>"; };
-		5FFDBEE214EEEAAB002CBB71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5FFDBEE414EEEAAB002CBB71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5FFDBEE614EEEAAB002CBB71 /* Touchpose-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Touchpose-Prefix.pch"; sourceTree = "<group>"; };
-		5FFDBEE714EEEAAB002CBB71 /* QAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAppDelegate.h; sourceTree = "<group>"; };
-		5FFDBEE814EEEAAB002CBB71 /* QAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAppDelegate.m; sourceTree = "<group>"; };
-		5FFDBEEA14EEEAAB002CBB71 /* QViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
-		5FFDBEEB14EEEAAB002CBB71 /* QViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
-		5FFDBEFD14EEF737002CBB71 /* QTouchposeApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTouchposeApplication.h; sourceTree = "<group>"; };
-		5FFDBEFE14EEF737002CBB71 /* QTouchposeApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTouchposeApplication.m; sourceTree = "<group>"; };
 		5FFDBF0614EF2A53002CBB71 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		5FFDBF0814EF2A98002CBB71 /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
 		5FFDBF0A14EF2ED9002CBB71 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				5FFDBF1F14F06721002CBB71 /* Resources */,
-				5FFDBEDE14EEEAAB002CBB71 /* Source */,
+				5FFDBEDE14EEEAAB002CBB71 /* Touchpose */,
 				5FFDBED714EEEAAB002CBB71 /* Frameworks */,
 				5FFDBED514EEEAAB002CBB71 /* Products */,
 			);
@@ -73,7 +73,7 @@
 		5FFDBED514EEEAAB002CBB71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FFDBED414EEEAAB002CBB71 /* Touchposé.app */,
+				5FFDBED414EEEAAB002CBB71 /* Touchposé.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,27 +88,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5FFDBEDE14EEEAAB002CBB71 /* Source */ = {
+		5FFDBEDE14EEEAAB002CBB71 /* Touchpose */ = {
 			isa = PBXGroup;
 			children = (
-				5FFDBEE714EEEAAB002CBB71 /* QAppDelegate.h */,
-				5FFDBEE814EEEAAB002CBB71 /* QAppDelegate.m */,
-				5FFDBEFD14EEF737002CBB71 /* QTouchposeApplication.h */,
-				5FFDBEFE14EEF737002CBB71 /* QTouchposeApplication.m */,
-				5FFDBEEA14EEEAAB002CBB71 /* QViewController.h */,
-				5FFDBEEB14EEEAAB002CBB71 /* QViewController.m */,
+				2522A96E1C675664007373E1 /* QAppDelegate.h */,
+				2522A96F1C675664007373E1 /* QAppDelegate.m */,
+				2522A9701C675664007373E1 /* QTouchposeApplication.h */,
+				2522A9711C675664007373E1 /* QTouchposeApplication.m */,
+				2522A9721C675664007373E1 /* QViewController.h */,
+				2522A9731C675664007373E1 /* QViewController.m */,
 				5FFDBEDF14EEEAAB002CBB71 /* Supporting Files */,
 			);
+			name = Touchpose;
 			path = Source;
 			sourceTree = SOURCE_ROOT;
 		};
 		5FFDBEDF14EEEAAB002CBB71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5FFDBEE114EEEAAB002CBB71 /* InfoPlist.strings */,
-				5FFDBEE414EEEAAB002CBB71 /* main.m */,
-				5FFDBEE014EEEAAB002CBB71 /* Touchpose-Info.plist */,
-				5FFDBEE614EEEAAB002CBB71 /* Touchpose-Prefix.pch */,
+				254323291C6756BA005E9658 /* InfoPlist.strings */,
+				2522A9691C67565F007373E1 /* main.m */,
+				2522A96A1C67565F007373E1 /* Touchpose-Info.plist */,
+				2522A96B1C67565F007373E1 /* Touchpose-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FFDBED314EEEAAB002CBB71 /* Touchposé */ = {
+		5FFDBED314EEEAAB002CBB71 /* Touchposé */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FFDBEF514EEEAAB002CBB71 /* Build configuration list for PBXNativeTarget "Touchposé" */;
+			buildConfigurationList = 5FFDBEF514EEEAAB002CBB71 /* Build configuration list for PBXNativeTarget "Touchposé" */;
 			buildPhases = (
 				5FFDBED014EEEAAB002CBB71 /* Sources */,
 				5FFDBED114EEEAAB002CBB71 /* Frameworks */,
@@ -143,7 +144,7 @@
 			);
 			name = "Touchposé";
 			productName = Touchpose;
-			productReference = 5FFDBED414EEEAAB002CBB71 /* Touchposé.app */;
+			productReference = 5FFDBED414EEEAAB002CBB71 /* Touchposé.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FFDBED314EEEAAB002CBB71 /* Touchposé */,
+				5FFDBED314EEEAAB002CBB71 /* Touchposé */,
 			);
 		};
 /* End PBXProject section */
@@ -178,7 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FFDBEE314EEEAAB002CBB71 /* InfoPlist.strings in Resources */,
+				2543232B1C6756BA005E9658 /* InfoPlist.strings in Resources */,
 				5FFDBF0714EF2A53002CBB71 /* Icon.png in Resources */,
 				5FFDBF0914EF2A98002CBB71 /* Icon-iPad.png in Resources */,
 				5FFDBF0B14EF2ED9002CBB71 /* Icon@2x.png in Resources */,
@@ -195,20 +196,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FFDBEE514EEEAAB002CBB71 /* main.m in Sources */,
-				5FFDBEE914EEEAAB002CBB71 /* QAppDelegate.m in Sources */,
-				5FFDBEEC14EEEAAB002CBB71 /* QViewController.m in Sources */,
-				5FFDBEFF14EEF737002CBB71 /* QTouchposeApplication.m in Sources */,
+				2522A9761C675664007373E1 /* QViewController.m in Sources */,
+				2522A9741C675664007373E1 /* QAppDelegate.m in Sources */,
+				2522A96C1C67565F007373E1 /* main.m in Sources */,
+				2522A9751C675664007373E1 /* QTouchposeApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5FFDBEE114EEEAAB002CBB71 /* InfoPlist.strings */ = {
+		254323291C6756BA005E9658 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5FFDBEE214EEEAAB002CBB71 /* en */,
+				2543232A1C6756BA005E9658 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -268,8 +269,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Source/Touchpose-Prefix.pch";
-				INFOPLIST_FILE = "Source/Touchpose-Info.plist";
+				GCC_PREFIX_HEADER = "Touchpose/Touchpose-Prefix.pch";
+				INFOPLIST_FILE = "Touchpose/Touchpose-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -279,8 +280,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Source/Touchpose-Prefix.pch";
-				INFOPLIST_FILE = "Source/Touchpose-Info.plist";
+				GCC_PREFIX_HEADER = "Touchpose/Touchpose-Prefix.pch";
+				INFOPLIST_FILE = "Touchpose/Touchpose-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -298,7 +299,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FFDBEF514EEEAAB002CBB71 /* Build configuration list for PBXNativeTarget "Touchposé" */ = {
+		5FFDBEF514EEEAAB002CBB71 /* Build configuration list for PBXNativeTarget "Touchposé" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FFDBEF614EEEAAB002CBB71 /* Debug */,
