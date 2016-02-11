@@ -62,7 +62,7 @@
 
 - (id)initWithPoint:(CGPoint)point
 {
-    const CGFloat kFingerRadius = 21.0f;
+    const CGFloat kFingerRadius = 30.0f;
     
     if ((self = [super initWithFrame:CGRectMake(point.x-kFingerRadius, point.y-kFingerRadius, 2*kFingerRadius, 2*kFingerRadius)]))
     {
